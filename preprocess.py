@@ -56,8 +56,8 @@ def pre_baseline(df):
     # segregate the train set from the test set and saved to cvs to be used in main notebook.
     dftrain=df[df['stroke'].isnull()!=True] 
     dftest=df[df['stroke'].isnull()==True]
-    dftrain.to_csv('train_base.csv', index=False)
-    dftest.to_csv('test_base.csv', index=False)
+    dftrain.to_csv('./dataset/train_base.csv', index=False)
+    dftest.to_csv('./dataset/test_base.csv', index=False)
     return dftrain, dftest
 
 # Add some new features that might be helpful
@@ -99,8 +99,8 @@ def pre_feature_eng_scale(df):
     # segregate the train set from the test set and saved to cvs to be used in main notebook.
     dftrain=df[df['stroke'].isnull()!=True] 
     dftest=df[df['stroke'].isnull()==True]
-    dftrain.to_csv('train_full.csv', index=False)
-    dftest.to_csv('test_full.csv', index=False)
+    dftrain.to_csv('./dataset/train_full.csv', index=False)
+    dftest.to_csv('./dataset/test_full.csv', index=False)
     return dftrain, dftest
 
 if __name__ == "__main__":
