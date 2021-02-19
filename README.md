@@ -10,4 +10,4 @@ Main jupyter notebook is 'ml_basics_main_notebook.ipynb', with complementary pre
 
 Completed Hackathon with subimssion.
 * Public Leaderboard: 17th 
-* Private Leaderboard with 70% witheld dataset: 4th
+* Private Leaderboard with 70% witheld test dataset: 4th
